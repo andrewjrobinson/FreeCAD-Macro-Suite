@@ -44,11 +44,14 @@ Cavities (or inlets) in the outside wire.
 NOTE: sometimes FreeCAD will not select the correct wire when asking for the 
 outside wire so you may need to edit the selection code near the end of this 
 macro. 
-> e.g. with ............ produces
-> X----X   X----X     X-------------X
-> |    |   |    |  >  |             |
-> |    X---X    |  >  |             |
-> X-------------X     X-------------X
+
+```
+e.g. with ............ produces
+X----X   X----X     X-------------X
+|    |   |    |  >  |             |
+|    X---X    |  >  |             |
+X-------------X     X-------------X
+```
 
 ## Utility
 
