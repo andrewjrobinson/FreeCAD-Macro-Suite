@@ -10,6 +10,22 @@ To make use of these macros (on linux/mac) you can symlink these files to your d
 * __LinesToGCode__: converts the select edges (in selection order) to a gcode program.  Useful to convert a sketch on a face to a tool-path.
 * __SketchLinesToGCode__: an older version of LinesToGCode that works on a sketch (in edit mode)
 
+## 2.5D (D2p5)
+
+Some macros for working with 2.5 Dimentions
+
+* __flatten3D__: Un-wraps a 3D model to produce a 2D representation that can be cut out and folded to
+produce the 3D object.  Note: all faces need to be on the same shape for FreeCAD to report the selection order correctly.
+To use it you need to:
+.. 1. Select the reference face
+.. 2. Select the bend edge (i.e. usually one that is incommon between reference and next face
+.. 3. Select a face to un-fold
+.. 4. Run macro
+.. 5. Repeat step 1 to 4 for all faces you want to unfold.
+.. * Note: you can repeat step 2 and 3 more than once to do an unfold with reference to an unfolded face.  e.g. 
+the underside of a cube.
+
+
 ## Non-parametric
 
 A number of non-parametric macros (i.e. break the FreeCAD-way) but help enable productivity (and save sanity) when modeling complex parts.
